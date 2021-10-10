@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Выезжаем на разборки</title>
+  <link rel="stylesheet" href="first.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 800px;
+    }
+    h1{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      animation: htext 1s linear forwards;
+      animation-delay: 4s;
+    }
+
+
+    @keyframes htext {
+      0%{background: #ffffff}
+      50%{background: #f8202d; transform: scale(50);}
+      100%{background: #f8202d; transform: scale(100);}
+    }
+
+
+    h1 span{
+      display: inline-block;
+      opacity: 0;
+      animation: anim 3s linear forwards;
+    }
+    span:nth-child(1){
+      animation-delay: 0s;
+    }
+    span:nth-child(2){
+      animation-delay: 0.2s;
+    }
+    span:nth-child(3){
+      animation-delay: 0.4s;
+    }
+    span:nth-child(4){
+      animation-delay: 0.6s;
+    }
+    span:nth-child(5){
+      animation-delay: 0.8s;
+    }
+    span:nth-child(6){
+      animation-delay: 1s;
+    }
+    span:nth-child(7){
+      animation-delay: 1.2s;
+    }
+    span:nth-child(8){
+      animation-delay: 1.4s;
+    }
+    span:nth-child(9){
+      animation-delay: 1.6s;
+    }
+    @keyframes anim {
+      0%{transform: scale(50) translateX(-50px); opacity: 0;}
+      3%{opacity: 1;}
+      12%, 85%{transform: scale(1) translateX(0px); opacity: 1;}
+      100%{transform: scale(50) translateX(0px); opacity: 0;}
+
+    }
+
+    .poster{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%) scale(5);
+      opacity: 0;
+      animation: poster 1s linear forwards;
+      animation-delay: 5s;
+    }
+
+    @keyframes poster {
+      0%{transform: translate(-950px, -550px) scale(5); opacity: 0;}
+      100%{transform: translate(-950px, -550px) scale(0.9); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+<h1>
+  <span>G<br>&nbsp</span>
+  <span>O<br>&nbsp</span>
+  <span>L<br>S</span>
+  <span>D<br>E</span>
+  <span>M<br>X</span>
+  <span>A<br>&nbsp</span>
+  <span>N<br>&nbsp</span>
+</h1>
+<a href="/home"> <img src="http://s14.pikabu.ru/post_img/big/2021/04/09/9/1617980585168752680.png" alt="кот" class="poster">
+  
+</a>
+</body>
+</html>
